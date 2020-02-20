@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {BrowserRouter as Router} from 'react-router-dom';
+
 import './App.css';
 
 import 'antd/dist/antd.css';
@@ -12,6 +14,7 @@ import SiteContent from './SiteContent';
 class App extends React.Component {
   render() {
     return (
+      <Router>
         <Layout>
           <SiteHeader />
           <Layout>
@@ -19,6 +22,7 @@ class App extends React.Component {
             <SiteContent />
           </Layout>
         </Layout>
+      </Router>
     );
   }
 }
