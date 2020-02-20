@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './App.css';
 
 import 'antd/dist/antd.css';
@@ -11,15 +12,13 @@ import SiteContent from './SiteContent';
 class App extends React.Component {
   render() {
     return (
-      <Layout>
-        <SiteHeader />
         <Layout>
-          <SideMenu />
-          <Layout style={{ padding: '0 24px 24px' }}>
+          <SiteHeader />
+          <Layout>
+            <SideMenu />
             <SiteContent />
           </Layout>
         </Layout>
-      </Layout>
     );
   }
 }
